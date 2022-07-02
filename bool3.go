@@ -8,6 +8,13 @@ const (
 	B3Null  Bool3 = -1
 )
 
+func B3FromBool(b bool) Bool3 {
+	if b {
+		return B3True
+	} else {
+		return B3False
+	}
+}
 func (b Bool3) HaveValue() bool     { return b != B3Null }
 func (b Bool3) IsTrue() bool        { return b == B3True }
 func (b Bool3) IsTrueOrNull() bool  { return b != B3False }
