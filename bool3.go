@@ -3,9 +3,9 @@ package core_utils
 type Bool3 int8
 
 const (
+	B3False Bool3 = -1
+	B3Null  Bool3 = 0
 	B3True  Bool3 = 1
-	B3False Bool3 = 0
-	B3Null  Bool3 = -1
 )
 
 func B3FromBool(b bool) Bool3 {
